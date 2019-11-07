@@ -4,4 +4,4 @@ PkgBin
 *.iso
 *.img
 patch_applied
-
+*.pyc

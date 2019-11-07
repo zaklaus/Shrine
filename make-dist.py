@@ -48,7 +48,7 @@ QEMU_START_DELAY = 3
 SLAVE_HC_Z = 'AutoOSInstall/SlaveOnce.HC.Z'
 
 AUTO_INSTALL_PATH = 'AutoOSInstall'
-AUTO_INSTALL_TIMEOUT = 300
+AUTO_INSTALL_TIMEOUT = 999999
 
 PATCHED_ISO = 'TempleSlave.iso'
 
@@ -60,7 +60,7 @@ QEMU_COMMAND = [
         '-m', str(MEM_SIZE),
         '-rtc', 'base=localtime',
         '-soundhw', 'pcspk',
-        '-serial', 'tcp::%d,server' % MFA_PORT]
+        '-serial', 'tcp::%d,server,nowait' % MFA_PORT]
 
 ENABLE_KVM = True
 
