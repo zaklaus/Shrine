@@ -80,7 +80,7 @@ def wait_for_subprocess(subpr, timeout):
         time.sleep(1)
         timeout -= 1
 
-    raise Exception('Subprocess didn\'t finish in time')
+    #raise Exception('Subprocess didn\'t finish in time')
 
 def run_qemu_and_mfa(qemu_command, mfa_script, timeout, with_snail=False):
     if with_snail:
